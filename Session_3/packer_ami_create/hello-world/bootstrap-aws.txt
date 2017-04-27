@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo apt-get -y update
+sudo apt-get -y install apache2
+echo "Welcome to Hello-world website..."  > var/www/html/index.html
+sudo service apache2 restart

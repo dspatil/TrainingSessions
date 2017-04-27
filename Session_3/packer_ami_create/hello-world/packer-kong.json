@@ -1,0 +1,23 @@
+{
+  "variables": {
+    
+  },
+  "builders": [{
+    "type": "amazon-ebs",   
+    "region": "us-east-1",	
+    "source_ami": "ami-772aa961",
+    "instance_type": "t2.medium",
+    "ssh_username": "ubuntu",
+    "ami_name": "helloworld-{{timestamp}}",
+	"security_group_id" :  "sg-2c2d3753",	
+	"vpc_id": "vpc-7a49c51c",
+	"user_data_file": "bootstrap-aws.txt"	
+  }],
+  
+  "provisioners": [ 
+	{
+	  "type": "shell",
+	  "inline": [ "echo hiii" ]
+	}
+  ]
+}
