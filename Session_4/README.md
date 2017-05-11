@@ -1,10 +1,13 @@
-# Terraform hands on lab
+# Terraform Hands on lab 2 : Deep dive with Modules and Rake
+
+
 
 Repo contains code examples for below.
 
-1. Creates security groups
-2. Deploys highly available and reliable hello-world website in to AWS.
-3. Simple packer script to publish hello-word base ami.
+
+1. Deploys highly available and reliable hello-world website in to AWS using terraform modules.
+
+2. Example on how to use rake tasks.
 
 
 
